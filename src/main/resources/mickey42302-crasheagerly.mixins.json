@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.mickey42302.crasheagerly.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SharedConstantsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "mickey42302-crasheagerly-refmap.json"
+}
