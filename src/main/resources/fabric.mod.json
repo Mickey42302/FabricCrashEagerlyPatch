@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "mickey42302-crasheagerly",
+  "version": "${version}",
+  "name": "Crash Eagerly Patch",
+  "description": "This mod enables the Crash Eagerly diagnostic tool.",
+  "authors": [
+    "Mickey42302"
+  ],
+  "contact": {
+    "homepage": "https://linktr.ee/mickey42302",
+    "sources": "https://github.com/mickey42302"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/mickey42302-crasheagerly/icon.png",
+  "environment": "*",
+  "mixins": [
+    "mickey42302-crasheagerly.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.10",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
