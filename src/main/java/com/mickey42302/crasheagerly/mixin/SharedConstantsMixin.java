@@ -14,14 +14,14 @@ public abstract class SharedConstantsMixin {
     @Final
     @Shadow
     @Mutable
-    public static boolean CRASH_ON_UNCAUGHT_THREAD_EXCEPTION;
+    public static boolean CRASH_EAGERLY;
 
     @Unique
     private static final Logger LOGGER = LogUtils.getLogger();
 
     @Inject(method = {"<clinit>"}, at = {@At("TAIL")})
     private static void crasheagerly$clinit(CallbackInfo ci) {
-        CRASH_ON_UNCAUGHT_THREAD_EXCEPTION = true;
+        CRASH_EAGERLY = true;
         LOGGER.warn("Warning: The Crash Eagerly feature is enabled. This will cause the game to crash more often.");
     }
 }
